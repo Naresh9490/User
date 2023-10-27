@@ -1,0 +1,28 @@
+
+.user-info {
+  position: relative;
+  cursor: pointer;
+}
+
+.popup {
+  visibility: hidden;
+  width: 120px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position the popup above the text */
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.user-info:hover .popup {
+  visibility: visible;
+  opacity: 1;
+}
+

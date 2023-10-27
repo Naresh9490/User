@@ -1,0 +1,28 @@
+
+.user-info {
+  position: relative;
+  cursor: pointer;
+}
+
+.popup {
+  visibility: hidden;
+  width: 100%;
+  text-align: center;
+  border-radius: 6px;
+  padding: 3px 0;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.user-info:hover .popup {
+  visibility: visible;
+  opacity: 1;
+}
+.Username{
+  text-decoration: none;
+}
+.profile{
+  font-weight: bold;
+}
